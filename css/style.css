@@ -5,6 +5,7 @@ body {
 	overflow: hidden;
 }
 
-#cloud {
+.clouds {
 	position: absoulte;
+	z-index: -999;
 }
