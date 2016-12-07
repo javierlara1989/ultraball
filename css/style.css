@@ -9,3 +9,7 @@ body {
 	position: absoulte;
 	z-index: -999;
 }
+
+#cloud {
+	position: absoulte;
+}
