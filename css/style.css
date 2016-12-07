@@ -1,6 +1,10 @@
 html {
 }
 
-.clouds {
+body {
+	overflow: hidden;
+}
+
+#cloud {
 	position: absoulte;
 }
