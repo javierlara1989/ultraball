@@ -6,10 +6,6 @@ body {
 }
 
 .cloud {
-	position: absoulte;
+	position: absolute;
 	z-index: -999;
-}
-
-#cloud {
-	position: absoulte;
 }
