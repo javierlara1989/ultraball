@@ -19,6 +19,7 @@ skyColours = ["#001848", "#001848", "#001848", "#301860", "#301860", "#483078",
   function setWeather(){
     var cloudDiv = document.getElementById("cloud");
     cloudDiv.src = clouds[Math.floor(Math.random()*clouds.length)];
+    cloudDiv.style.width = "100%";
 
     var currentTime = new Date().getHours();
     document.body.style.backgroundColor = skyColours[currentTime];
