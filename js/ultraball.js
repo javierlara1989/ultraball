@@ -1,8 +1,8 @@
 /* global js*/
 
-clouds = ["/img/clouds/clouds1.png",
-          "/img/clouds/clouds2.png",
-          "/img/clouds/clouds3.png"];
+clouds = ["/img/clouds/clouds1_low.png",
+          "/img/clouds/clouds2_low.png",
+          "/img/clouds/clouds3_low.png"];
 
 skyColours = ["#001848", "#001848", "#001848", "#301860", "#301860", "#483078",
               "#604878", "#906090", "#0CC3FA", "#61D6FA", "#89E0FA" ,"#89E0FA",
@@ -19,6 +19,8 @@ skyColours = ["#001848", "#001848", "#001848", "#301860", "#301860", "#483078",
   function setWeather(){
     var cloudDiv = document.getElementById("cloud");
     cloudDiv.src = clouds[Math.floor(Math.random()*clouds.length)];
+    cloudDiv.css("width", "100%");
+    cloudDiv.css("height", "100%");
 
     var currentTime = new Date().getHours();
     document.body.style.backgroundColor = skyColours[currentTime];
