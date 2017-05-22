@@ -26,6 +26,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 
 
+echo "Starting curl";
 $curl = curl_init();
 $name = $name; 
 $email = $email; 
@@ -54,7 +55,6 @@ if ($err) {
 } else {
   echo $response;
 }
-
 return true;
 
 
